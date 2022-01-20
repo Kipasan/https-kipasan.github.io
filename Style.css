@@ -1,0 +1,65 @@
+body{
+	background-color: #2F4454;
+}
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background: #020b4c;
+	background: -webkit-linear-gradient(to top, #020b4c, #5fe8e3); 
+	background: linear-gradient(to top, #020b4c,#5fe8e3);
+}
+.banner{
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	opacity: 0.3;
+}	
+.carousel-caption{
+	bottom: 25px;
+}
+.carousel-caption h4{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0,0,0,10);
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+.carousel-caption h5{
+	width: 80%;
+	margin: auto;
+	font-size: 16px;
+	text-shadow: 0 0 2px rgba(0,0,0,50);
+	text-align: center;
+	line-height: 1;
+	font-family: Helvetica;
+}
+.carousel-caption a{
+	font-family: Helvetica;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #148F77;
+	padding: 5px 10px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 25px;
+	box-shadow: 0 0 5px rgba(0,0,0,5);
+}
+.carousel-control.right{
+	background-image: none;
+}
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-indicators .active{
+	background-color: #148F77;
+	border-color: #148F77;
+}
