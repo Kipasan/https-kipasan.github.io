@@ -1,11 +1,23 @@
 /* nav bar */
 .navbar {
-    position: relative;
-    z-index: 1;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
 }
 
 .navbar-brand   {
+    font-size: 10px;
+}
+.navbar-brand, .nav-link    {
+    color: white !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     font-size: 15px;
+}
+
+.navbar-brand img {
+        -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+        margin: -15px;
 }
 
 /* slide */
@@ -24,18 +36,15 @@
     font-weight: 500;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     font-size: 20px;
-    margin-top: -200px;
+    margin-top: 50px;
 }
 
 .carousel-caption p   {
-    font-weight: 200;
+    font-weight: 100;
     color: rgba(255, 255, 255, 0.7);
     font-size: 15px;
 }
 
-.carousel-indicators, button    {
-    margin-top: -120px;
-}
 
 .carousel-item .carousel-caption h5, p {
     position: relative;
@@ -47,10 +56,10 @@
 
 .info-panel    {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    margin-top: -100px;
+    border-radius: 30px;
+    margin-top: -50px;
     background-color: white;
-    padding: 30px;
+    padding: 25px;
 }
 .info-panel {
     position: relative;
@@ -58,16 +67,17 @@
 }
 
 .info-panel img {
-    width: 80px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .info-panel h4  {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 105px;
 }
 
 .info-panel p   {
@@ -94,12 +104,15 @@
     text-transform: uppercase;
     margin-right: 30px;
 }
-
+.navbar{
+    position: relative;
+    z-index: 1;
+}
 .nav-link:hover::after {
     content: '';
     display: block;
     border-bottom: 3px solid #02a6a0;
-    width: 50%;
+    width: 30%;
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: -8px;
@@ -107,14 +120,13 @@
 .navbar-brand, .nav-link    {
     color: white !important;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 15px;
 }
 
-    .navbar-brand img {
-        -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+.navbar-brand img {
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+        margin: -5px;
     }
-
-
  /* slide */
 .carousel  {
     position: relative;
@@ -134,6 +146,7 @@
     font-weight: 500;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     font-size: 30px;
+    margin-top: -150px;
 }
 
 .carousel-caption p   {
@@ -142,3 +155,35 @@
     font-size: 20px;
 }
 
+/* info */
+.info-panel    {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+.info-panel {
+    position: relative;
+    z-index: 1;
+}
+
+.info-panel img {
+    width: 80px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.info-panel h4  {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p   {
+    font-size: 14px;
+    color: #cacaca;
+    margin-top: -5px;
+    font-weight: 200;
+}
